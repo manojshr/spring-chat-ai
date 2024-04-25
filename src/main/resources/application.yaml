@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-chat-ai
+  ai:
+    openai:
+      chat:
+        options:
+          model: gpt-3.5-turbo
+        api-key: ${OPEN_AI_API_KEY}
+    vertex:
+      ai:
+        gemini:
+          chat:
+            options:
+              model: gemini-1.0-pro
+          projectId: ${GCP_PROJECT_ID}
+          location: ${GCP_REGION}
